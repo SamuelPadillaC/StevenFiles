@@ -1,0 +1,135 @@
+<!--
+<h1> {{student.name}} </h1>
+<ul>
+{% for file in student.file_set.all %}
+    <li> {{ file.file_type }} </li>
+
+{% endfor %}
+</ul>
+-->
+<!--Load Static-->
+{%load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> {{student.name}} </title>
+
+    <link rel="stylesheet" href="{% static 'css/navstyle.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/student.css'%}" type="text/css">
+    </head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="col-12 topnav">
+            <a class="active" href='../'>Home</a>
+            <a href="/admin/">Admin</a>
+            <a href="#contact">Contact Support</a>
+            <a href="https://www.stevenmentor.com" target="_blank">Steven Mentor</a>
+            </div> 
+        </header>
+
+        <div class="row top-space">
+
+            <div class="col-md-4 student-col">
+        
+                <h2>{{student.name}}</h2>
+                <img src="https://via.placeholder.com/350x250">
+                
+
+                <ul>
+                    <li> Country of Citizenship: {{student.country_of_citizenship}} </li>
+                    <li> Age: {{student.age}} </li>
+                    <li> Email: {{student.email}} </li>
+                    <li> Major: {{student.major}} </li>
+                    <li> Status: {{student.status}} </li>
+                </ul>
+
+            </div>
+            
+            <div class="col-md-8">
+
+                <h2 class="file-head"> Files </h2> 
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                    <div class="col-md-4">
+                        <p> This is a File </p>
+                        <img src="https://via.placeholder.com/150x200">
+                    </div>
+                </div>
+            
+            </div>
+        
+        </div>    
+
+    </div>
+</body>
+</html>

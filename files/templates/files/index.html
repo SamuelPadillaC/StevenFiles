@@ -1,0 +1,173 @@
+<!--
+<p>
+    Current Students:
+</p>
+{% if load_students %}
+    <ul>
+    {% for student in load_students %}
+        <li><a href={% url 'files:student' student.name%}>{{ student.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No students are available.</p>
+{% endif %}
+-->
+<!-- Loading Static Content -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Students</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="{% static 'css/navstyle.css'%}">
+		<link rel="stylesheet" href="{% static 'css/index.css'%}">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="col-12 topnav">
+			<a class="active" href="#home">Home</a>
+			<a href="/admin/">Admin</a>
+			<a href="#contact">Contact Support</a>
+			<a href="https://www.stevenmentor.com" target="_blank">Steven Mentor</a>
+			</div> 
+		</header>
+		<h1> Steven Files </h1>
+		<h3> Morningside College </h3>
+		<p> Current Students </p>
+		<ul id="Current">
+			<li id="header">
+				<span>ID</span>
+				<span>Sudent Name</span>
+				<span>Country of Citizenship</span>
+				<span>Major</span>
+				<span>Graduation Year</span>
+				<span>Number of Files</span>
+				<span>Completed Profile</span>
+			</li>
+			<li>
+				<span class ="number">1</span>
+				<span class ="name">Samuel Padilla</span>
+				<span class="country">Colombia</span>
+				<span class="major">Computer Science</span>
+				<span class="year">2021</span>
+				<span class="files">9</span>
+				<span class="completed">Completed</span>
+			</li>
+			<li>
+				<span class ="number">2</span>
+				<span class ="name">Dean Stevens</span>
+				<span class="country">Burkina Faso</span>
+				<span class="major">Dance</span>
+				<span class="year">2023</span>
+				<span class="files">7</span>
+				<span class="completed">Completed</span>
+			</li>
+			<li>
+				<span class ="number">3</span>
+				<span class ="name">Alex Popostov</span>
+				<span class="country">Russia</span>
+				<span class="major">Dance</span>
+				<span class="year">2020</span>
+				<span class="files">4</span>
+				<span class="completed alert">Incomplete</span>
+			</li>
+			<li>
+				<span class ="number">4</span>
+				<span class ="name">Philips John</span>
+				<span class="country">Mexico</span>
+				<span class="major">Business</span>
+				<span class="year">2021</span>
+				<span class="files">12</span>
+				<span class="completed">Completed</span>
+			</li>
+			<li>
+				<span class ="number">5</span>
+				<span class ="name">Daniel Luis</span>
+				<span class="country">Argentina</span>
+				<span class="major">Marketing</span>
+				<span class="year">2021</span>
+				<span class="files">3</span>
+				<span class="completed alert">Incomplete</span>
+			</li>
+			<li>
+				<span class ="number">6</span>
+				<span class ="name">Mia Khalifa</span>
+				<span class="country">Iran</span>
+				<span class="major">Theatre</span>
+				<span class="year">2021</span>
+				<span class="files">6</span>
+				<span class="completed">Completed</span>
+			</li>
+			<li>
+				<span class ="number">7</span>
+				<span class ="name">Luisa Freire</span>
+				<span class="country">Brasil</span>
+				<span class="major">Political Science</span>
+				<span class="year">2023</span>
+				<span class="files">5</span>
+				<span class="completed">Completed</span>
+			</li>
+			<li>
+				<span class ="number">8</span>
+				<span class ="name">Andrea Rosales</span>
+				<span class="country">Ecuador</span>
+				<span class="major">Business</span>
+				<span class="year">2021</span>
+				<span class="files">2</span>
+				<span class="completed alert">Incomplete</span>
+			</li>
+		</ul>
+
+		<p> Prospective Students </p>
+		<ul id="Prospect">
+			<li id="header">
+				<span>ID</span>
+				<span>Sudent Name</span>
+				<span>Country of Citizenship</span>
+				<span>Major</span>
+				<span>Graduation Year</span>
+				<span>Number of Files</span>
+				<span>Completed Profile</span>
+			</li>
+			<li>
+				<span class ="number">1</span>
+				<span class ="name">Andres Iniestas</span>
+				<span class="country">Spain</span>
+				<span class="major">Dance</span>
+				<span class="year">2025</span>
+				<span class="files">3</span>
+				<span class="completed alert">Incomplete</span>
+			</li>
+			<li>
+				<span class ="number">2</span>
+				<span class ="name">Felipe Dos Santos</span>
+				<span class="country">Brazl</span>
+				<span class="major">Biology</span>
+				<span class="year">2025</span>
+				<span class="files">1</span>
+				<span class="completed alert">Incomplete</span>
+			</li>
+			<li>
+				<span class ="number">3</span>
+				<span class ="name">Marco Rubio</span>
+				<span class="country">Venezuela</span>
+				<span class="major">Undecided</span>
+				<span class="year">2025</span>
+				<span class="files">4</span>
+				<span class="completed alert">Incomplete</span>
+			</li>
+			<li>
+				<span class ="number">4</span>
+				<span class ="name">Pedro Tostes</span>
+				<span class="country">Brazil</span>
+				<span class="major">Undecided</span>
+				<span class="year">2025</span>
+				<span class="files">2</span>
+				<span class="completed alert">Incomplete</span>
+			</li>
+		</ul>
+	</body>
+</html>
